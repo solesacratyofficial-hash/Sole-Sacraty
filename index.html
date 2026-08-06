@@ -3,43 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sole Sacraty — Mobile Foot Reflexology, Rustenburg &amp; Gauteng</title>
+<title>Sole Sacraty — Mobile Foot Reflexology, Rustenburg & Gauteng</title>
 <meta name="description" content="Certified mobile foot reflexology across Rustenburg and Gauteng. Foot reflexology from R350, hot stone foot therapy R450, couples foot ritual R600. Book on WhatsApp.">
-<meta name="google-site-verification" content="GFLL4irZSFC4o8XXxA1My3whxFgfzAoZnx7PxtNWtkc">
 <link rel="canonical" href="https://solesacraty.co.za/">
 <meta name="theme-color" content="#1c231a">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sole Sacraty — Mobile Foot Reflexology">
-<meta property="og:description" content="Certified foot reflexology that comes to you across Rustenburg &amp; Gauteng. From R350.">
-<meta property="og:image" content="https://solesacraty.co.za/images/hero-ritual.webp">
-<meta property="og:url" content="https://solesacraty.co.za/">
-
 <link rel="icon" type="image/webp" href="images/logo.webp">
-<link rel="apple-touch-icon" href="images/logo.webp">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEg3tf9V5S9SmA9nR4Wl97+j2Nw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HealthAndBeautyBusiness",
-  "name": "Sole Sacraty",
-  "description": "Certified mobile foot reflexology and foot spa therapies across Rustenburg and Gauteng, South Africa.",
-  "telephone": "+27704938532",
-  "email": "SoleSacraty.Official@gmail.com",
-  "url": "https://solesacraty.co.za/",
-  "image": "https://solesacraty.co.za/images/hero-ritual.webp",
-  "priceRange": "R350-R600",
-  "areaServed": ["Rustenburg", "Gauteng", "North West"],
-  "founder": { "@type": "Person", "name": "Siyabonga Blessing Nkosi" },
-  "sameAs": ["https://www.facebook.com/share/1B9UauaAM3/"]
-}
-</script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
   :root{
     --ink:#1c231a;
@@ -261,23 +233,73 @@
     font-size:1.6rem;box-shadow:0 10px 30px -8px rgba(0,0,0,.5);transition:transform .3s ease;
   }
   .fab-whatsapp:hover{transform:scale(1.08)}
-</style>
-</head>
-<body>
-<div class="grain" aria-hidden="true"></div>
 
-<header>
+  .navdrop{position:relative;display:inline-flex}
+  .dropdown-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fdfaf3;border:1px solid var(--line);border-radius:8px;min-width:240px;box-shadow:0 20px 40px -20px rgba(0,0,0,.35);padding:10px;display:none;z-index:65}
+  .dropdown-menu a{display:block;padding:10px 14px;font-size:.9rem;color:var(--ink);border-radius:4px}
+  .dropdown-menu a:hover{background:#f7f2e6;color:var(--copper)}
+  .navdrop.open .dropdown-menu{display:block}
+  footer .foot-socials{display:flex;gap:12px;justify-content:center;margin-bottom:6px}
+  .textlink{color:#c9c3b3;text-decoration:underline;text-underline-offset:3px}
+  .textlink:hover{color:#fff}
+  @media (max-width:860px){.navdrop{flex-direction:column;align-items:center}.dropdown-menu{position:static;transform:none;box-shadow:none;border:0;background:rgba(255,255,255,.06)}.dropdown-menu a{color:#e9e4d6}}
+
+/* --- HIGH CONTRAST MOBILE NAV FIX - force black bg white text --- */
+header{background:#0a0f09 !important}
+@media (max-width:860px){
+  nav.links{
+    background:#0a0f09 !important;
+    backdrop-filter:none !important;
+    border-left:1px solid rgba(255,255,255,.08);
+  }
+  nav.links.open{
+    background:#0a0f09 !important;
+  }
+  nav.links a.navlink{
+    color:#ffffff !important;
+    font-size:1.45rem !important;
+    font-weight:500 !important;
+    letter-spacing:.02em;
+  }
+  nav.links .navdrop a.navlink{color:#fff !important}
+  nav.links .dropdown-menu{
+    background:rgba(255,255,255,.07) !important;
+    border:1px solid rgba(255,255,255,.12) !important;
+  }
+  nav.links .dropdown-menu a{color:#fff !important}
+  nav.links .social-icon{
+    border-color:rgba(255,255,255,.25) !important;
+    color:#fff !important;
+  }
+  nav.links .navcta{
+    background:#b6934a !important;
+    color:#0a0f09 !important;
+    font-weight:700 !important;
+  }
+}
+
+</style></head><body><div class='grain' aria-hidden='true'></div><header>
   <div class="wrap">
-    <a href="./" class="brand">
+    <a href="/" class="brand">
       <img src="images/logo.webp" alt="Sole Sacraty emblem" width="40" height="40">
       <span>Sole Sacraty</span>
     </a>
     <nav class="links" id="navLinks">
-      <a class="navlink" href="#services">Therapies</a>
-      <a class="navlink" href="#ritual">The Ritual</a>
-      <a class="navlink" href="#payments">Payments</a>
-      <a class="navlink" href="#founder">Founder</a>
+      <a class="navlink" href="/#services">Therapies</a>
+      <div class="navdrop" id="servicesDrop">
+        <a class="navlink" href="#" id="servicesToggle">Services <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="/#services">Foot Reflexology — R350</a>
+          <a href="/#services">Hot Stone Foot Therapy — R450</a>
+          <a href="/couples-foot-ritual/">Couples Foot Ritual — R600</a>
+        </div>
+      </div>
+      <a class="navlink" href="/#ritual">The Ritual</a>
+      <a class="navlink" href="/blog/">Blog</a>
+      <a class="navlink" href="/#founder">Founder</a>
+      <a class="navlink" href="/booking/">Booking</a>
       <a class="social-icon" href="https://www.facebook.com/share/1B9UauaAM3/" target="_blank" rel="noopener" aria-label="Sole Sacraty on Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a class="social-icon" href="https://wa.me/27704938532" target="_blank" rel="noopener" aria-label="Sole Sacraty on WhatsApp"><i class="fab fa-whatsapp"></i></a>
       <a class="navlink navcta" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20foot%20treatment">Book on WhatsApp</a>
     </nav>
     <button class="burger" id="burgerBtn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
@@ -327,7 +349,7 @@
       <div class="s-body">
         <div class="price-row"><h3>Foot Reflexology</h3><span class="price">R350</span></div>
         <div class="duration">Approx. 50 minutes · Studio or mobile</div>
-        <p class="desc">Targeted pressure-point work across the full sole, arch and toes, mapped to the reflexology chart, to ease tension carried in the rest of the body and leave circulation genuinely improved — not just relaxed.</p>
+        <p class="desc">Targeted pressure-point work across the full sole, arch and toes, mapped to the reflexology chart, to ease tension carried in the rest of the body and leave circulation genuinely improved — not just relaxed. Read more about <a href="/blog/first-reflexology-session/" style="color:var(--copper);text-decoration:underline">what to expect from your first session</a>.</p>
         <a class="btn btn-line" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20Foot%20Reflexology%20R350"><i class="fab fa-whatsapp"></i> Book R350</a>
       </div>
     </div>
@@ -340,7 +362,7 @@
       <div class="s-body">
         <div class="price-row"><h3>Hot Stone Foot Therapy</h3><span class="price">R450</span></div>
         <div class="duration">Approx. 65 minutes · Studio or mobile</div>
-        <p class="desc">Heated basalt stones glide over the soles and ankles after a warm foot soak, driving deeper heat into stubborn tension than fingertips alone — ideal after a week on your feet.</p>
+        <p class="desc">Heated basalt stones glide over the soles and ankles after a warm foot soak, driving deeper heat into stubborn tension than fingertips alone — ideal after a week on your feet. See the <a href="/blog/hot-stone-therapy-benefits/" style="color:var(--copper);text-decoration:underline">benefits for stress &amp; circulation</a>.</p>
         <a class="btn btn-line" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20Hot%20Stone%20Foot%20Therapy%20R450"><i class="fab fa-whatsapp"></i> Book R450</a>
       </div>
     </div>
@@ -353,8 +375,8 @@
       <div class="s-body">
         <div class="price-row"><h3>Couples Foot Ritual</h3><span class="price">R600</span></div>
         <div class="duration">Approx. 60 minutes · Two guests, side by side</div>
-        <p class="desc">Two copper foot baths scattered with rose petals and rosemary, followed by side-by-side reflexology — for a partner, a friend, or anyone you'd rather not do this alone.</p>
-        <a class="btn btn-line" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20the%20Couples%20Foot%20Ritual%20R600"><i class="fab fa-whatsapp"></i> Book R600</a>
+        <p class="desc">Two copper foot baths scattered with rose petals and rosemary, followed by side-by-side reflexology — for a partner, a friend, or anyone you'd rather not do this alone. <a href="/couples-foot-ritual/" style="color:var(--copper);text-decoration:underline">See the full couples experience</a>.</p>
+        <a class="btn btn-line" href="/couples-foot-ritual/"><i class="fas fa-heart"></i> View Couples Ritual</a>
       </div>
     </div>
   </div>
@@ -384,16 +406,16 @@
     <div class="section-head rv">
       <span class="eyebrow">Secure Payments</span>
       <h2>Every payment goes to the Sole Sacraty business account</h2>
-      <p>Never a personal account, never a stranger's number. Confirm any payment request against the details below before sending anything.</p>
+      <p>Never a personal account, never a stranger's number. Confirm any payment request against the details below before sending anything, or visit our dedicated <a href="/booking/" style="color:var(--copper);text-decoration:underline">Booking &amp; Payments page</a>.</p>
     </div>
 
     <div class="pay-grid rv">
       <div class="pay-card featured">
         <i class="fas fa-university icon"></i>
-        <h4>EFT — Business Account</h4>
-        <p>Direct bank transfer. Use your own name as the payment reference so we can match it to your booking.</p>
-        <div class="kv"><b>Account name:</b> Sole Sacraty<br><b>Reference:</b> Your full name<br><b>Proof of payment:</b> SoleSacraty.Official@gmail.com</div>
-        <a class="btn btn-primary btn-block" href="mailto:SoleSacraty.Official@gmail.com?subject=Proof%20of%20Payment"><i class="fas fa-paper-plane"></i> Email Proof of Payment</a>
+        <h4>EFT — Capitec Business</h4>
+        <p>Direct bank transfer to our Capitec Business account. Use your own name as the payment reference so we can match it to your booking.</p>
+        <div class="kv"><b>Account name:</b> Sole Sacraty<br><b>Bank:</b> Capitec Business<br><b>Reference:</b> Your full name</div>
+        <a class="btn btn-primary btn-block" href="/booking/"><i class="fas fa-arrow-right"></i> View Full EFT Details</a>
       </div>
 
       <div class="pay-card">
@@ -471,6 +493,7 @@
         <div class="contact-row"><i class="fas fa-envelope"></i> SoleSacraty.Official@gmail.com</div>
         <div class="contact-row"><i class="fas fa-map-marker-alt"></i> Rustenburg studio &amp; mobile across Gauteng</div>
         <div class="contact-row"><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1B9UauaAM3/" target="_blank" rel="noopener">Sole Sacraty on Facebook</a></div>
+        <div class="contact-row"><i class="fas fa-star"></i> <a href="https://www.google.com/maps/search/?api=1&query=Sole+Sacraty+Rustenburg" target="_blank" rel="noopener">Find us on Google Business Profile</a></div>
         <div class="contact-cta">
           <a class="btn btn-primary" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20session"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
           <a class="btn btn-ghost" href="mailto:SoleSacraty.Official@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
@@ -487,45 +510,21 @@
 
 <footer>
   <div class="wrap">
-    <a class="social-icon" href="https://www.facebook.com/share/1B9UauaAM3/" target="_blank" rel="noopener" aria-label="Sole Sacraty on Facebook"><i class="fab fa-facebook-f"></i></a>
+    <div class="foot-socials">
+      <a class="social-icon" href="https://www.facebook.com/share/1B9UauaAM3/" target="_blank" rel="noopener" aria-label="Sole Sacraty on Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a class="social-icon" href="https://wa.me/27704938532" target="_blank" rel="noopener" aria-label="Sole Sacraty on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a class="social-icon" href="https://www.google.com/maps/search/?api=1&query=Sole+Sacraty+Rustenburg" target="_blank" rel="noopener" aria-label="Sole Sacraty on Google Business Profile"><i class="fas fa-star"></i></a>
+    </div>
     <p><b>Sole Sacraty</b> · solesacraty.co.za · SoleSacraty.Official@gmail.com · +27 70 493 8532</p>
+    <p><a class="textlink" href="/blog/">Blog</a> · <a class="textlink" href="/booking/">Booking &amp; Payments</a> · <a class="textlink" href="/couples-foot-ritual/">Couples Foot Ritual</a></p>
     <p>© 2026 Sole Sacraty. Business-account payments only · POPIA compliant.</p>
   </div>
 </footer>
-
-<a class="fab-whatsapp" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20foot%20treatment" aria-label="Book on WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
+<a class="fab-whatsapp" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20foot%20treatment" aria-label="Book on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <script>
-  var burger = document.getElementById('burgerBtn');
-  var navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', function(){
-    navLinks.classList.toggle('open');
-    var icon = burger.querySelector('i');
-    icon.className = navLinks.classList.contains('open') ? 'fas fa-xmark' : 'fas fa-bars';
-  });
-  navLinks.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      navLinks.classList.remove('open');
-      burger.querySelector('i').className = 'fas fa-bars';
-    });
-  });
-
-  var revealEls = document.querySelectorAll('.rv');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, {threshold: 0.15, rootMargin: '0px 0px -40px 0px'});
-    revealEls.forEach(function(el){ io.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('in'); });
-  }
+var burger=document.getElementById('burgerBtn');var navLinks=document.getElementById('navLinks');
+if(burger&&navLinks){burger.addEventListener('click',function(){navLinks.classList.toggle('open');var i=burger.querySelector('i');if(i)i.className=navLinks.classList.contains('open')?'fas fa-xmark':'fas fa-bars'});navLinks.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(e){if(e.target.closest('#servicesToggle'))return;if(!a.closest('.dropdown-menu')){navLinks.classList.remove('open');var ic=burger.querySelector('i');if(ic)ic.className='fas fa-bars'}})})}
+var drop=document.getElementById('servicesDrop');var tog=document.getElementById('servicesToggle');if(drop&&tog){tog.addEventListener('click',function(e){e.preventDefault();drop.classList.toggle('open')});document.addEventListener('click',function(e){if(!drop.contains(e.target))drop.classList.remove('open')})}
+var els=document.querySelectorAll('.rv');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:0.15});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add('in')})}
 </script>
-</body>
-</html>
+</body></html>
