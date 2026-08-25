@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEg3tf9V5S9SmA9nR4Wl97+j2Nw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEg3tf9V5S9SmA9nR4W">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -59,7 +59,7 @@
     <div class="breadcrumb rv"><a href="/">Home</a> / Booking &amp; Payments</div>
     <span class="eyebrow rv">Book &amp; Pay</span>
     <h1 class="rv">Booking &amp; Payments</h1>
-    <p class="lede rv">Message Siyabonga on WhatsApp to confirm your date and time, then settle payment using any of the options below. Every payment goes to the Sole Sacraty business account — never a personal number.</p>
+    <p class="lede rv">Message Siyabonga on WhatsApp to confirm your date and time, then settle payment using any of the options below. Every payment goes to the Sole Sacraty business account — never a personal account.</p>
     <div class="hero-cta rv" style="margin-top:30px">
       <a class="btn btn-primary" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20session"><i class="fab fa-whatsapp"></i> Start Your Booking on WhatsApp</a>
     </div>
@@ -88,7 +88,7 @@
           <b>Account type:</b> Current (Business)<br>
           <b>Reference:</b> Your full name
         </div>
-        <a class="btn btn-primary btn-block" href="https://wa.me/27704938532?text=Hi%2C%20I%27ve%20paid%20via%20EFT%20-%20here%27s%20my%20proof%20of%20payment" id="eftPaidBtn"><i class="fab fa-whatsapp"></i> WhatsApp Proof of Payment</a>
+        <a class="btn btn-primary btn-block" href="https://wa.me/27704938532?text=Hi%2C%20I%27ve%20paid%20via%20EFT%20-%20here%27s%20my%20proof%20of%20payment" id="eftPaidBtn"><i class="fab fa-whatsapp"></i> Confirm EFT Payment</a>
       </div>
 
       <div class="pay-card">
@@ -98,11 +98,14 @@
         <a class="btn btn-line btn-block" href="https://wa.me/27704938532?text=Hi%2C%20please%20send%20me%20a%20Yoco%20card%20payment%20link" id="yocoBtn"><i class="fab fa-whatsapp"></i> Request Payment Link</a>
       </div>
 
-      <div class="pay-card">
-        <i class="fas fa-qrcode icon"></i>
-        <h4>SnapScan</h4>
-        <p>Prefer to scan? Message us and we'll send the SnapScan QR code directly for a quick, contactless payment.</p>
-        <a class="btn btn-line btn-block" href="https://wa.me/27704938532?text=Hi%2C%20please%20send%20me%20the%20SnapScan%20QR%20code"><i class="fab fa-whatsapp"></i> Request QR Code</a>
+      <div class="pay-card snapscan-card">
+        <img src="../images/snapscan-qr.png" alt="Sole Sacraty SnapScan QR Code" style="width:180px; height:auto; margin:0 auto 16px; display:block; border-radius:12px; background:white; padding:10px;">
+        <h4>SnapScan — Scan to Pay</h4>
+        <p>Secure instant payment. Scan QR or tap button. Enter your <strong>Name + Date</strong> as reference. Payment goes directly to Capitec Business: Sole Sacraty.</p>
+        <a href="https://pos.snapscan.io/qr/qVgRXio8" target="_blank" class="btn btn-block" style="background:#0f5dbd; color:white; display:block; text-align:center; padding:14px; border-radius:8px; text-decoration:none;">
+          Pay with SnapScan
+        </a>
+        <small style="display:block; margin-top:10px; opacity:0.7;">Works with all banking apps</small>
       </div>
 
       <div class="pay-card">
@@ -115,7 +118,7 @@
 
     <div class="deposit-note rv">
       <h4>Deposit &amp; arrival policy</h4>
-      <p>Mobile Gauteng sessions require a 50% deposit to confirm the appointment. Rustenburg studio visits are paid on arrival. Send proof of payment to <b>SoleSacraty.Official@gmail.com</b> or WhatsApp <b>070 493 8532</b> — POPIA compliant, your details are never shared.</p>
+      <p>Mobile Gauteng sessions require a 50% deposit to confirm the appointment. Rustenburg studio visits are paid on arrival. Send proof of payment to <b>SoleSacraty.Official@gmail.com</b> or WhatsApp +27 70 493 8532.</p>
     </div>
 
     <div class="deposit-note rv" style="margin-top:20px">
@@ -131,7 +134,7 @@
     <div class="foot-socials">
       <a class="social-icon" href="https://www.facebook.com/share/1B9UauaAM3/" target="_blank" rel="noopener" aria-label="Sole Sacraty on Facebook"><i class="fab fa-facebook-f"></i></a>
       <a class="social-icon" href="https://wa.me/27704938532" target="_blank" rel="noopener" aria-label="Sole Sacraty on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a class="social-icon" href="https://www.google.com/maps/search/?api=1&query=Sole+Sacraty+Rustenburg" target="_blank" rel="noopener" aria-label="Sole Sacraty on Google Business Profile"><i class="fas fa-star"></i></a>
+      <a class="social-icon" href="https://www.google.com/maps/search/?api=1&query=Sole+Sacraty+Rustenburg" target="_blank" rel="noopener" aria-label="Sole Sacraty on Google Business Profile"><i class="fab fa-google"></i></a>
     </div>
     <p><b>Sole Sacraty</b> · solesacraty.co.za · SoleSacraty.Official@gmail.com · +27 70 493 8532</p>
     <p><a class="textlink" href="/blog/">Blog</a> · <a class="textlink" href="/couples-foot-ritual/">Couples Foot Ritual</a> · <a class="textlink" href="/">Home</a></p>
