@@ -122,7 +122,7 @@
   }
   @media (max-width:960px){.hero-photo::before{background:linear-gradient(180deg, rgba(28,35,26,.2) 0%, rgba(28,35,26,.9) 88%)}}
   .grain{position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.06;mix-blend-mode:overlay;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='1'/></filter><rect width='140' height='140' filter='url(%23n)'/></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='2'/></filter><rect width='140' height='140' fill='%23000'/><rect width='140' height='140' fill='%23fff' filter='url(%23n)' opacity='.05'/></svg>");
   }
 
   /* ---------- STATS ---------- */
@@ -243,14 +243,14 @@
   .fab-whatsapp:hover{transform:scale(1.08)}
 
   .navdrop{position:relative;display:inline-flex}
-  .dropdown-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fdfaf3;border:1px solid var(--line);border-radius:8px;min-width:240px;box-shadow:0 20px 40px -2px rgba(28,35,26,.15);display:none;z-index:100}
+  .dropdown-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fdfaf3;border:1px solid var(--line);border-radius:8px;min-width:240px;box-shadow:0 20px 40px -20px rgba(0,0,0,.1);display:none}
   .dropdown-menu a{display:block;padding:10px 14px;font-size:.9rem;color:var(--ink);border-radius:4px}
   .dropdown-menu a:hover{background:#f7f2e6;color:var(--copper)}
   .navdrop.open .dropdown-menu{display:block}
   footer .foot-socials{display:flex;gap:12px;justify-content:center;margin-bottom:6px}
   .textlink{color:#c9c3b3;text-decoration:underline;text-underline-offset:3px}
   .textlink:hover{color:#fff}
-  @media (max-width:860px){.navdrop{flex-direction:column;align-items:center}.dropdown-menu{position:static;transform:none;box-shadow:none;border:0;background:rgba(255,255,255,.06)}.dropdown-menu a{color:#fff}}
+  @media (max-width:860px){.navdrop{flex-direction:column;align-items:center}.dropdown-menu{position:static;transform:none;box-shadow:none;border:0;background:rgba(255,255,255,.06)}.dropdown-menu a{color:#fff!important}}
 
 /* --- HIGH CONTRAST MOBILE NAV FIX - force black bg white text --- */
 header{background:#0a0f09 !important}
@@ -414,7 +414,7 @@ header{background:#0a0f09 !important}
     <div class="section-head rv">
       <span class="eyebrow">Secure Payments</span>
       <h2>Every payment goes to the Sole Sacraty business account</h2>
-      <p>Never a personal account, never a stranger's number. Confirm any payment request against the details below before sending anything, or visit our dedicated <a href="/booking/" style="color:var(--copper)">booking page</a>.</p>
+      <p>Never a personal account, never a stranger's number. Confirm any payment request against the details below before sending anything, or visit our dedicated <a href="/booking/" style="color:var(--copper);text-decoration:underline">booking page</a>.</p>
     </div>
 
     <div class="pay-grid rv">
@@ -433,11 +433,15 @@ header{background:#0a0f09 !important}
         <a class="btn btn-line btn-block" href="https://wa.me/27704938532?text=Hi%2C%20please%20send%20me%20a%20Yoco%20card%20payment%20link"><i class="fab fa-whatsapp"></i> Request Payment Link</a>
       </div>
 
-      <div class="pay-card">
+      <div class="pay-card snapscan-card">
         <i class="fas fa-qrcode icon"></i>
-        <h4>SnapScan</h4>
-        <p>Prefer to scan? Message us and we'll send the SnapScan QR code directly for a quick, contactless payment.</p>
-        <a class="btn btn-line btn-block" href="https://wa.me/27704938532?text=Hi%2C%20please%20send%20me%20the%20SnapScan%20QR%20code"><i class="fab fa-whatsapp"></i> Request QR Code</a>
+        <img src="images/snapscan-qr.png" alt="Sole Sacraty SnapScan QR Code" style="width:180px; height:auto; margin:0 auto 16px; display:block; border-radius:8px;">
+        <h4>SnapScan — Scan to Pay</h4>
+        <p>Secure instant payment. Scan QR or tap button. Enter your <strong>Name + Date</strong> as reference. Payment goes directly to Capitec Business: Sole Sacraty.</p>
+        <a href="https://pos.snapscan.io/qr/qVgRXio8" target="_blank" class="btn btn-primary btn-block" style="background:#0f5dbd; color:white;">
+          <i class="fas fa-qrcode"></i> Pay with SnapScan
+        </a>
+        <small style="display:block; margin-top:10px; opacity:0.7;">Works with all banking apps</small>
       </div>
 
       <div class="pay-card">
@@ -450,7 +454,7 @@ header{background:#0a0f09 !important}
 
     <div class="deposit-note rv">
       <h4>Deposit &amp; arrival policy</h4>
-      <p>Mobile Gauteng sessions require a 50% deposit to confirm the appointment. Rustenburg studio visits are paid on arrival. Send proof of payment to <b>SoleSacraty.Official@gmail.com</b> or WhatsApp +27 70 493 8532.</p>
+      <p>Mobile Gauteng sessions require a 50% deposit to confirm the appointment. Rustenburg studio visits are paid on arrival. Send proof of payment to <b>SoleSacraty.Official@gmail.com</b> or WhatsApp it to <b>+27 70 493 8532</b>.</p>
     </div>
   </div>
 </section>
@@ -465,7 +469,7 @@ header{background:#0a0f09 !important}
       <div class="founder-text rv">
         <span class="eyebrow">The Hands Behind It</span>
         <h2>Siyabonga Blessing Nkosi</h2>
-        <p>Sole Sacraty was founded in 2022 as a strictly foot-focused reflexology practice serving Rustenburg and mobile clients across Gauteng — no scope creep into full-body treatments, just deep, dedicated foot care.</p>
+        <p>Sole Sacraty was founded in 2022 as a strictly foot-focused reflexology practice serving Rustenburg and mobile clients across Gauteng — no scope creep into full-body treatments, just deep listening to what feet need.</p>
         <p>Every booking, deposit and question is handled personally by Siyabonga, a certified reflexologist, which is why booking happens on WhatsApp rather than through an anonymous form.</p>
         <div class="sig">— Siyabonga</div>
         <div style="margin-top:28px">
@@ -501,7 +505,7 @@ header{background:#0a0f09 !important}
         <div class="contact-row"><i class="fas fa-envelope"></i> SoleSacraty.Official@gmail.com</div>
         <div class="contact-row"><i class="fas fa-map-marker-alt"></i> Rustenburg studio &amp; mobile across Gauteng</div>
         <div class="contact-row"><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1B9UauaAM3/" target="_blank" rel="noopener">Sole Sacraty on Facebook</a></div>
-        <div class="contact-row"><i class="fas fa-star"></i> <a href="https://www.google.com/maps/search/?api=1&query=Sole+Sacraty+Rustenburg" target="_blank" rel="noopener">Find us on Google Business Profile</a></div>
+        <div class="contact-row"><i class="fas fa-star"></i> <a href="https://www.google.com/maps/search/?api=1&query=Sole+Sacraty+Rustenburg" target="_blank" rel="noopener">Find us on Google Business</a></div>
         <div class="contact-cta">
           <a class="btn btn-primary" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20session"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
           <a class="btn btn-ghost" href="mailto:SoleSacraty.Official@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
@@ -531,8 +535,8 @@ header{background:#0a0f09 !important}
 <a class="fab-whatsapp" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20foot%20treatment" aria-label="Book on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <script>
 var burger=document.getElementById('burgerBtn');var navLinks=document.getElementById('navLinks');
-if(burger&&navLinks){burger.addEventListener('click',function(){navLinks.classList.toggle('open');var i=burger.querySelector('i');if(i)i.className=navLinks.classList.contains('open')?'fas fa-xmark':'fas fa-bars'});}
-var drop=document.getElementById('servicesDrop');var tog=document.getElementById('servicesToggle');if(drop&&tog){tog.addEventListener('click',function(e){e.preventDefault();drop.classList.toggle('open')});}
-var els=document.querySelectorAll('.rv');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');}})});els.forEach(function(el){io.observe(el);});}
+if(burger&&navLinks){burger.addEventListener('click',function(){navLinks.classList.toggle('open');var i=burger.querySelector('i');if(i)i.className=navLinks.classList.contains('open')?'fas fa-xmark':'fas fa-bars';});}
+var drop=document.getElementById('servicesDrop');var tog=document.getElementById('servicesToggle');if(drop&&tog){tog.addEventListener('click',function(e){e.preventDefault();drop.classList.toggle('open');});}
+var els=document.querySelectorAll('.rv');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');}});});els.forEach(function(el){io.observe(el);});}
 </script>
 </body></html>
