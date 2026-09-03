@@ -122,7 +122,7 @@
   }
   @media (max-width:960px){.hero-photo::before{background:linear-gradient(180deg, rgba(28,35,26,.2) 0%, rgba(28,35,26,.9) 88%)}}
   .grain{position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.06;mix-blend-mode:overlay;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='1'></feTurbulence></filter><rect width='140' height='140' fill='%23fff' filter='url(%23n)'></rect></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='1'/></filter><rect width='140' height='140' fill='%23fff'/><rect width='140' height='140' fill='%23000' filter='url(%23n)' opacity='.05'/></svg>");
   }
 
   /* ---------- STATS ---------- */
@@ -187,6 +187,7 @@
   .pay-card.featured .kv{background:rgba(255,255,255,.07)}
   .pay-card .kv b{color:var(--ink)}
   .pay-card.featured .kv b{color:#fff}
+  .pay-card .kv a{color:var(--gold);text-decoration:underline}
   .soon{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);
     border:1px solid var(--line);padding:8px 16px;border-radius:999px;text-align:center}
   .deposit-note{margin-top:40px;background:var(--paper);border-left:3px solid var(--copper);padding:22px 28px;border-radius:2px}
@@ -243,14 +244,14 @@
   .fab-whatsapp:hover{transform:scale(1.08)}
 
   .navdrop{position:relative;display:inline-flex}
-  .dropdown-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fdfaf3;border:1px solid var(--line);border-radius:8px;min-width:240px;box-shadow:0 20px 40px -20px rgba(28,35,26,.4);opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s ease;z-index:100;display:none}
+  .dropdown-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);background:#fdfaf3;border:1px solid var(--line);border-radius:8px;min-width:240px;box-shadow:0 20px 40px -20px rgba(28,35,26,.25);z-index:100;display:none;opacity:1}
   .dropdown-menu a{display:block;padding:10px 14px;font-size:.9rem;color:var(--ink);border-radius:4px}
   .dropdown-menu a:hover{background:#f7f2e6;color:var(--copper)}
   .navdrop.open .dropdown-menu{display:block}
   footer .foot-socials{display:flex;gap:12px;justify-content:center;margin-bottom:6px}
   .textlink{color:#c9c3b3;text-decoration:underline;text-underline-offset:3px}
   .textlink:hover{color:#fff}
-  @media (max-width:860px){.navdrop{flex-direction:column;align-items:center}.dropdown-menu{position:static;transform:none;box-shadow:none;border:0;background:rgba(255,255,255,.06);opacity:1;visibility:visible}.dropdown-menu a{color:#fff}}
+  @media (max-width:860px){.navdrop{flex-direction:column;align-items:center}.dropdown-menu{position:static;transform:none;box-shadow:none;border:0;background:rgba(255,255,255,.06);opacity:1;visibility:hidden;max-height:0;overflow:hidden;transition:max-height .3s ease}.navdrop.open .dropdown-menu{visibility:visible;max-height:500px}}
 
 /* --- HIGH CONTRAST MOBILE NAV FIX - force black bg white text --- */
 header{background:#0a0f09 !important}
@@ -322,7 +323,7 @@ header{background:#0a0f09 !important}
       <p class="tag rv">Step into greener pastures</p>
       <p class="lede rv">Strictly foot therapy — reflexology, hot stone and ritual foot treatments brought to your home or office in Rustenburg and mobile across Gauteng, from R350.</p>
       <div class="hero-cta rv">
-        <a class="btn btn-primary" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20Foot%20Reflexology%20R350"><i class="fab fa-whatsapp"></i> Book Foot Reflexology</a>
+        <a class="btn btn-primary" id="hero-book-btn" href="https://pay.yoco.com/r/9DOjxp" onclick="gtag('event','begin_checkout',{currency:'ZAR',value:350,items:[{item_name:'Foot Reflexology 60min'}]})"><i class="fas fa-credit-card"></i> Book & Pay R350 — Instant Yoco</a>
         <a class="btn btn-ghost" href="mailto:SoleSacraty.Official@gmail.com"><i class="fas fa-envelope"></i> SoleSacraty.Official@gmail.com</a>
       </div>
     </div>
@@ -357,8 +358,11 @@ header{background:#0a0f09 !important}
       <div class="s-body">
         <div class="price-row"><h3>Foot Reflexology</h3><span class="price">R350</span></div>
         <div class="duration">Approx. 50 minutes · Studio or mobile</div>
-        <p class="desc">Targeted pressure-point work across the full sole, arch and toes, mapped to the reflexology chart, to ease tension carried in the rest of the body and leave circulation genuine and restored.</p>
-        <a class="btn btn-line" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20Foot%20Reflexology%20R350"><i class="fab fa-whatsapp"></i> Book R350</a>
+        <p class="desc">Targeted pressure-point work across the full sole, arch and toes, mapped to the reflexology chart, to ease tension carried in the rest of the body and leave circulation genuine relief.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://pay.yoco.com/r/9DOjxp" onclick="gtag('event','begin_checkout',{currency:'ZAR',value:350,items:[{item_name:'Foot Reflexology'}]})"><i class="fas fa-credit-card"></i> Book & Pay R350</a>
+          <a class="btn btn-line" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20Foot%20Reflexology%20R350"><i class="fab fa-whatsapp"></i> Ask on WhatsApp</a>
+        </div>
       </div>
     </div>
 
@@ -370,8 +374,11 @@ header{background:#0a0f09 !important}
       <div class="s-body">
         <div class="price-row"><h3>Hot Stone Foot Therapy</h3><span class="price">R450</span></div>
         <div class="duration">Approx. 65 minutes · Studio or mobile</div>
-        <p class="desc">Heated basalt stones glide over the soles and ankles after a warm foot soak, driving deeper heat into stubborn tension than fingertips alone — ideal after a week on your feet or an intense sports week.</p>
-        <a class="btn btn-line" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20Hot%20Stone%20Foot%20Therapy%20R450"><i class="fab fa-whatsapp"></i> Book R450</a>
+        <p class="desc">Heated basalt stones glide over the soles and ankles after a warm foot soak, driving deeper heat into stubborn tension than fingertips alone — ideal after a week on your feet or when circulation is sluggish.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://pay.yoco.com/r/WbY9VN" onclick="gtag('event','begin_checkout',{currency:'ZAR',value:450,items:[{item_name:'Hot Stone Foot Therapy'}]})"><i class="fas fa-credit-card"></i> Book & Pay R450</a>
+          <a class="btn btn-line" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20Hot%20Stone%20Foot%20Therapy%20R450"><i class="fab fa-whatsapp"></i> Ask on WhatsApp</a>
+        </div>
       </div>
     </div>
 
@@ -384,7 +391,10 @@ header{background:#0a0f09 !important}
         <div class="price-row"><h3>Couples Foot Ritual</h3><span class="price">R600</span></div>
         <div class="duration">Approx. 60 minutes · Two guests, side by side</div>
         <p class="desc">Two copper foot baths scattered with rose petals and rosemary, followed by side-by-side reflexology — for a partner, a friend, or anyone you'd rather not do this alone.</p>
-        <a class="btn btn-line" href="/couples-foot-ritual/"><i class="fas fa-heart"></i> View Couples Ritual</a>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://pay.yoco.com/r/PQ3gVj" onclick="gtag('event','begin_checkout',{currency:'ZAR',value:600,items:[{item_name:'Couples Foot Ritual'}]})"><i class="fas fa-credit-card"></i> Book & Pay R600</a>
+          <a class="btn btn-line" href="/couples-foot-ritual/"><i class="fas fa-heart"></i> View Ritual Details</a>
+        </div>
       </div>
     </div>
   </div>
@@ -414,23 +424,28 @@ header{background:#0a0f09 !important}
     <div class="section-head rv">
       <span class="eyebrow">Secure Payments</span>
       <h2>Every payment goes to the Sole Sacraty business account</h2>
-      <p>Never a personal account, never a stranger's number. Confirm any payment request against the details below before sending anything, or visit our dedicated <a href="/booking/" style="color:var(--copper);font-weight:600;text-decoration:underline;text-underline-offset:2px">booking &amp; payments page</a>.</p>
+      <p>Never a personal account, never a stranger's number. Confirm any payment request against the details below before sending anything, or visit our dedicated <a href="/booking/" style="color:var(--copper);text-decoration:underline">booking &amp; payments page</a>.</p>
     </div>
 
     <div class="pay-grid rv">
       <div class="pay-card featured">
+        <i class="fas fa-credit-card icon"></i>
+        <h4>Yoco — Instant Card & EFT</h4>
+        <p>Recommended. Visa, Mastercard, Instant EFT. Secure Yoco checkout with your Sole Sacraty logo. Money lands in Capitec Business: Sole Sacraty.</p>
+        <div class="kv"><b>Live Links:</b><br>
+        <a href="https://pay.yoco.com/r/9DOjxp">R350 Reflexology</a> • 
+        <a href="https://pay.yoco.com/r/WbY9VN">R450 Hot Stone</a> • 
+        <a href="https://pay.yoco.com/r/PQ3gVj">R600 Couples</a>
+        </div>
+        <a class="btn btn-primary btn-block" href="https://pay.yoco.com/r/9DOjxp" onclick="gtag('event','begin_checkout',{currency:'ZAR',value:350,items:[{item_name:'Foot Reflexology'}]})"><i class="fas fa-bolt"></i> Pay R350 Now via Yoco</a>
+      </div>
+
+      <div class="pay-card">
         <i class="fas fa-university icon"></i>
         <h4>EFT — Capitec Business</h4>
         <p>Direct bank transfer to our Capitec Business account. Use your own name as the payment reference so we can match it to your booking.</p>
         <div class="kv"><b>Account name:</b> Sole Sacraty<br><b>Bank:</b> Capitec Business<br><b>Reference:</b> Your full name</div>
         <a class="btn btn-primary btn-block" href="/booking/"><i class="fas fa-arrow-right"></i> View Full EFT Details</a>
-      </div>
-
-      <div class="pay-card">
-        <i class="fas fa-credit-card icon"></i>
-        <h4>Card via Yoco</h4>
-        <p>Visa, Mastercard and instant EFT. We'll send a secure Yoco payment link straight to your WhatsApp for your exact booking amount.</p>
-        <a class="btn btn-line btn-block" href="https://wa.me/27704938532?text=Hi%2C%20please%20send%20me%20a%20Yoco%20card%20payment%20link"><i class="fab fa-whatsapp"></i> Request Payment Link</a>
       </div>
 
       <div class="pay-card snapscan-card">
@@ -454,7 +469,7 @@ header{background:#0a0f09 !important}
 
     <div class="deposit-note rv">
       <h4>Deposit &amp; arrival policy</h4>
-      <p>Mobile Gauteng sessions require a 50% deposit to confirm the appointment. Rustenburg studio visits are paid on arrival. Send proof of payment to <b>SoleSacraty.Official@gmail.com</b> or WhatsApp +27 70 493 8532.</p>
+      <p>Mobile Gauteng sessions require a 50% deposit to confirm the appointment. Rustenburg studio visits are paid on arrival. Send proof of payment to <b>SoleSacraty.Official@gmail.com</b> or WhatsApp <b>+27 70 493 8532</b> to confirm.</p>
     </div>
   </div>
 </section>
@@ -469,7 +484,7 @@ header{background:#0a0f09 !important}
       <div class="founder-text rv">
         <span class="eyebrow">The Hands Behind It</span>
         <h2>Siyabonga Blessing Nkosi</h2>
-        <p>Sole Sacraty was founded in 2022 as a strictly foot-focused reflexology practice serving Rustenburg and mobile clients across Gauteng — no scope creep into full-body treatments, just deep, lasting relief from foot tension and circulation.</p>
+        <p>Sole Sacraty was founded in 2022 as a strictly foot-focused reflexology practice serving Rustenburg and mobile clients across Gauteng — no scope creep into full-body treatments, just deep, targeted work on the feet.</p>
         <p>Every booking, deposit and question is handled personally by Siyabonga, a certified reflexologist, which is why booking happens on WhatsApp rather than through an anonymous form.</p>
         <div class="sig">— Siyabonga</div>
         <div style="margin-top:28px">
@@ -525,7 +540,7 @@ header{background:#0a0f09 !important}
     <div class="foot-socials">
       <a class="social-icon" href="https://www.facebook.com/share/1B9UauaAM3/" target="_blank" rel="noopener" aria-label="Sole Sacraty on Facebook"><i class="fab fa-facebook-f"></i></a>
       <a class="social-icon" href="https://wa.me/27704938532" target="_blank" rel="noopener" aria-label="Sole Sacraty on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://maps.app.goo.gl/nWpo4MR2D7izKdEG6?g_st=ac" target="_blank" rel="noopener" aria-label="Find us on Google" style="width:44px; height:44px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:inline-flex; align-items:center; justify-content:center; color:white; text-decoration:none;">
+      <a href="https://maps.app.goo.gl/nWpo4MR2D7izKdEG6?g_st=ac" target="_blank" rel="noopener" aria-label="Find us on Google" style="width:44px; height:44px; border-radius:50%; border:1px solid rgba(255,255,255,.15); display:inline-flex; align-items:center; justify-content:center; color:#a9a290; transition:all .3s ease">
         <i class="fab fa-google" style="font-size:18px;"></i>
       </a>
     </div>
@@ -537,8 +552,8 @@ header{background:#0a0f09 !important}
 <a class="fab-whatsapp" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20foot%20treatment" aria-label="Book on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <script>
 var burger=document.getElementById('burgerBtn');var navLinks=document.getElementById('navLinks');
-if(burger&&navLinks){burger.addEventListener('click',function(){navLinks.classList.toggle('open');var i=burger.querySelector('i');if(i)i.className=navLinks.classList.contains('open')?'fas fa-xmark':'fas fa-bars'});navLinks.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){navLinks.classList.remove('open');if(burger.querySelector('i'))burger.querySelector('i').className='fas fa-bars'})});}
+if(burger&&navLinks){burger.addEventListener('click',function(){navLinks.classList.toggle('open');var i=burger.querySelector('i');if(i)i.className=navLinks.classList.contains('open')?'fas fa-xmark':'fas fa-bars'});}
 var drop=document.getElementById('servicesDrop');var tog=document.getElementById('servicesToggle');if(drop&&tog){tog.addEventListener('click',function(e){e.preventDefault();drop.classList.toggle('open')});}
-var els=document.querySelectorAll('.rv');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');}});},{threshold:.1});els.forEach(function(el){io.observe(el);});}
+var els=document.querySelectorAll('.rv');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');}})},{threshold:.15});els.forEach(function(el){io.observe(el);})}
 </script>
 </body></html>
