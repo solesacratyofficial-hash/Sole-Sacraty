@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEg3tf9V5S9SmA9nR4WZSpA9nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEg3tf9V5S9SmA9nR4WDXhVWFhQ==">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -59,7 +59,7 @@
     <div class="breadcrumb rv"><a href="/">Home</a> / Booking &amp; Payments</div>
     <span class="eyebrow rv">Book &amp; Pay</span>
     <h1 class="rv">Booking &amp; Payments</h1>
-    <p class="lede rv">Message Siyabonga on WhatsApp to confirm your date and time, then settle payment using any of the options below. Every payment goes to the Sole Sacraty business account — never personal.</p>
+    <p class="lede rv">Message Siyabonga on WhatsApp to confirm your date and time, then settle payment using any of the options below. Every payment goes to the Sole Sacraty business account — never through personal accounts.</p>
     <div class="hero-cta rv" style="margin-top:30px">
       <a class="btn btn-primary" href="https://wa.me/27704938532?text=Hi%20Sole%20Sacraty%2C%20I%27d%20like%20to%20book%20a%20session"><i class="fab fa-whatsapp"></i> Start Your Booking on WhatsApp</a>
     </div>
@@ -88,23 +88,26 @@
           <b>Account type:</b> Current (Business)<br>
           <b>Reference:</b> Your full name
         </div>
-        <a class="btn btn-primary btn-block" href="https://wa.me/27704938532?text=Hi%2C%20I%27ve%20paid%20via%20EFT%20-%20here%27s%20my%20proof%20of%20payment" id="eftPaidBtn"><i class="fab fa-whatsapp"></i> I've Paid via EFT</a>
+        <a class="btn btn-primary btn-block" href="https://wa.me/27704938532?text=Hi%2C%20I%27ve%20paid%20via%20EFT%20-%20here%27s%20my%20proof%20of%20payment"><i class="fab fa-whatsapp"></i> Confirm EFT Payment</a>
       </div>
 
       <div class="pay-card">
         <i class="fas fa-credit-card icon"></i>
         <h4>Card via Yoco</h4>
-        <p>Visa, Mastercard and instant EFT. We'll send a secure Yoco payment link straight to your WhatsApp for your exact booking amount.</p>
-        <a class="btn btn-line btn-block" href="https://wa.me/27704938532?text=Hi%2C%20please%20send%20me%20a%20Yoco%20card%20payment%20link" id="yocoBtn"><i class="fab fa-whatsapp"></i> Request Payment Link</a>
+        <p>Visa, Mastercard and instant EFT. Secure payment links below for your exact booking amount.</p>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 16px;">
+          <a href="https://pay.yoco.com/r/9DOjxp" target="_blank" class="btn btn-block" style="background:#b6934a; color:#0a0f09; padding:14px; border-radius:8px; text-decoration:none; font-weight:600; text-align:center;"><i class="fas fa-credit-card"></i> Pay R350 — Foot Reflexology 60min</a>
+          <a href="https://pay.yoco.com/r/WbY9VN" target="_blank" class="btn btn-block" style="background:#b1552f; color:#fff9f0; padding:14px; border-radius:8px; text-decoration:none; font-weight:600; text-align:center;"><i class="fas fa-credit-card"></i> Pay R450 — Hot Stone 75min</a>
+          <a href="https://pay.yoco.com/r/PQ3gVj" target="_blank" class="btn btn-block" style="background:#2b3327; color:#fff; padding:14px; border-radius:8px; text-decoration:none; font-weight:600; text-align:center; border:1px solid rgba(255,255,255,.2);"><i class="fas fa-credit-card"></i> Pay R600 — Couples Ritual (2 people)</a>
+        </div>
+        <small style="display:block; margin-top:10px; opacity:0.7; text-align:center;">🔒 Yoco Secured • Instant confirmation</small>
       </div>
 
       <div class="pay-card snapscan-card">
         <img src="../images/snapscan-qr.png" alt="Sole Sacraty SnapScan QR Code" style="width:180px; height:auto; margin:0 auto 16px; display:block; border-radius:12px; background:white; padding:10px;">
         <h4>SnapScan — Scan to Pay</h4>
         <p>Secure instant payment. Scan QR or tap button. Enter your <strong>Name + Date</strong> as reference. Payment goes directly to Capitec Business: Sole Sacraty.</p>
-        <a href="https://pos.snapscan.io/qr/qVgRXio8" target="_blank" class="btn btn-block" style="background:#0f5dbd; color:white; display:block; text-align:center; padding:14px; border-radius:8px; text-decoration:none; font-weight:500;">
-          Pay with SnapScan
-        </a>
+        <a href="https://pos.snapscan.io/qr/qVgRXio8" target="_blank" class="btn btn-block" style="background:#0f5dbd; color:white; display:block; text-align:center; padding:14px; border-radius:8px; text-decoration:none; font-weight:600;">Pay with SnapScan</a>
         <small style="display:block; margin-top:10px; opacity:0.7;">Works with all banking apps</small>
       </div>
 
@@ -134,7 +137,7 @@
     <div class="foot-socials">
       <a class="social-icon" href="https://www.facebook.com/share/1B9UauaAM3/" target="_blank" rel="noopener" aria-label="Sole Sacraty on Facebook"><i class="fab fa-facebook-f"></i></a>
       <a class="social-icon" href="https://wa.me/27704938532" target="_blank" rel="noopener" aria-label="Sole Sacraty on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a class="social-icon" href="https://maps.app.goo.gl/nWpo4MR2D7izKdEG6?g_st=ac" target="_blank" rel="noopener" aria-label="Find us on Google" style="width:44px; height:44px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:inline-flex; align-items:center; justify-content:center; color:white; text-decoration:none;">
+      <a class="social-icon" href="https://maps.app.goo.gl/nWpo4MR2D7izKdEG6?g_st=ac" target="_blank" rel="noopener" aria-label="Find us on Google" style="width:44px; height:44px; border-radius:50%; background:#1c231a; display:flex; align-items:center; justify-content:center;">
         <i class="fab fa-google" style="font-size:18px;"></i>
       </a>
     </div>
