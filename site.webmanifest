@@ -1,0 +1,14 @@
+{
+  "name": "Sole Sacraty — Mobile Foot Reflexology",
+  "short_name": "Sole Sacraty",
+  "description": "Mobile foot reflexology and hot stone foot therapy in Rustenburg and Gauteng.",
+  "start_url": "/?utm_source=pwa",
+  "display": "standalone",
+  "background_color": "#f7f2e6",
+  "theme_color": "#1c231a",
+  "lang": "en-ZA",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

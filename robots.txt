@@ -1,5 +1,7 @@
+# robots.txt for solesacraty.co.za
 User-agent: *
 Allow: /
 Disallow: /thank-you/
+Disallow: /cdn-cgi/
 
 Sitemap: https://solesacraty.co.za/sitemap.xml
